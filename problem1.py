@@ -12,6 +12,7 @@ def validate_password(password):
     special_found = any(char in "!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?`~" for char in password)
     digit_found = any(char.isdigit() for char in password)
     lower_found = any(char.islower() for char in password)
+
     upper_found = any(char.isupper() for char in password)
 
     if not special_found:
